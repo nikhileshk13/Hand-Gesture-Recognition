@@ -21,6 +21,7 @@ classifier = load_model('CNN_model.h5')
 detector = mediapipe_hands.hands_module(maxHands=1)
 cap = cv2.VideoCapture(0)
 
+
 while True:
     try:
         success, img = cap.read()
