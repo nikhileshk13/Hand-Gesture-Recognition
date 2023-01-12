@@ -22,7 +22,7 @@ hfR = 350
 cap=cv2.VideoCapture(0)
 cap.set(3, wcam)
 cap.set(4, hcam)
-wscr, hscr = pyautogui.size()  # pyautogui function to get height and width of the screen
+wscr, hscr = pyautogui.size() 
 print(wscr, hscr)
 detector = mediapipe_hands.hands_module(maxHands=1)
 fl = 0  # To check if click is executed only once
