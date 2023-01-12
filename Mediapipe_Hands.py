@@ -24,11 +24,6 @@ class hands_module():
         # method of hands class that will process the frame and give the result
         self.results = self.hands.process(imgRGB)
 
-        # extracting information out of the results object
-
-        # check if something is detected shows none is nothing is detected
-        # print(results.multi_hand_landmark)
-
         # checking the number of hands detected and drawing landmark points for each hand
         if self.results.multi_hand_landmarks:
             for handLms in self.results.multi_hand_landmarks:
@@ -47,9 +42,6 @@ class hands_module():
             myHand = self.results.multi_hand_landmarks[handNo] #access landmark values based on handno
             # get id number and landmark information(x,y) coordinate for each landmark
             for id, lm in enumerate(myHand.landmark):
-                # print x,y coordinate of landmarks
-                # print(id, lm)
-
                 h, w, c = img.shape
                 # convert integer x,y values of landmarks into pixel values
                 cx, cy = int(lm.x * w), int(lm.y * h)
