@@ -33,8 +33,8 @@ To train the CNN models, we prepared a dataset consisting of 4 hand gestures to 
 Model was able to achieve an accuracy of 0.96 and 0.95 on the training and validation data respectively. Meanwhile the loss was 0.1 and 0.18 for training and validation data respectively. The graphs below show the variation of accuracy and loss over the 15 epochs for which the model was trained:
 
 <p float="center">
-  <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/accuracy.png" width="425" />
-  <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/loss.png" width="425" /> 
+  <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/accuracy.png" width="420" />
+  <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/loss.png" width="420" /> 
 </p>
 
 The following image shows the combined confusion matrix for the 4 classes:
