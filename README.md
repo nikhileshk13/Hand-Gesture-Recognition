@@ -17,7 +17,7 @@ After testing different models like VGG-16, ResNet-50, Inception, etc the Incept
 
 The model was trained for 15 epochs. Performance of the model was evaluated using different metrics such as accuracy, sensitivity, specificity, area under the ROC curve, and confusion matrix. Categorical cross-entropy was used as the loss function. Categorical cross-entropy is used along with the softmax function for classification since it’s a multi-modal classification containing 4 classes. The softmax function predicts the probabilities for each class meanwhile the categorical cross-entropy loss function measures the distance of those probabilities from the actual truth values of the classes. Mathematically the Categorical Cross-Entropy loss for this problem can be represented as follows:
 
-<p aligh="center">
+<p align="center">
   <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/CE_loss%20formula.png" width=300 /> 
 </p>
  where the term y<sub>p</sub> gives the probability for positive class and the denominator term is used for normalizing the probalities of all the classes.
