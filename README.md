@@ -35,7 +35,7 @@ The model was trained for 15 epochs. The performance of the model was evaluated 
  where the term y<sub>p</sub> gives the probability for the positive class and the denominator term is used for normalizing the probabilities of all the classes.
  
  ### Dataset
-To train the CNN models, we prepared a dataset consisting of 4 hand gestures to perform 4 basic GUI operations in a kiosk machine namely “back”, “forward”, “submit” and “clear/cancel”. The dataset contains colored 75x75 sized images captured indoors, in public places, and in outdoor surroundings under different lighting conditions. Fig 3 shows the 4 classes of hand gestures. The dataset contains 500 images per class for training and another 100 images as validation data. The validation data is captured mostly at places with bright natural or artificial lighting. Gestures and their respective actions are shown in the image below:
+To train the CNN model, I prepared a dataset consisting of 4 hand gestures to perform 4 basic GUI operations in a kiosk machine namely “back”, “forward”, “submit” and “clear/cancel”. The dataset contains colored 75x75 sized images captured indoors, in public places, and in outdoor surroundings under different lighting conditions. The dataset contains 500 images per class for training and another 100 images as validation data. The validation data is captured mostly at places with bright natural or artificial lighting. Gestures and their respective actions are shown in the image below:
 
 <p align="center">
   <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/gestures.jpg" width=800 />
