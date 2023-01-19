@@ -8,6 +8,19 @@ The following block diagram shows the different components involved in the syste
   <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/Block%20Diagram.jpg" width=700/>
 </p>
 
+### Mediapipe-Hands Module
+Mediapipe hands module is used here to obtain the bounding box for the hand. The image captured through the camera will be cropped to the size of the bounding box to remove unnecessary part of the image before passing it as input to the CNN model. Apart from this the landmark coordinates obtained from this module are used to control the mouse pointer and perform click action with the help of GUI automation tool- PyAutoGUI. As the coordinates of index fingertip change when hand is moved, mouse pointer will be moved along those coordintes using PyAutoGUI fucntions. The following image shows the output from the Mediapipe-Hands module:
+
+<p align="center">
+  <img src="https://github.com/Nikxiii/Hand-Gesture-Recognition/blob/main/Diagrams/mediapipe_landmarks.jpg"/ width=300>
+</p>
+
+References-
+
+Mediapipe-Hands: https://google.github.io/mediapipe/solutions/hands.html
+
+PyAutoGUI: https://pyautogui.readthedocs.io/en/latest/
+
 ### CNN Model
 After testing different models like VGG-16, ResNet-50, Inception, etc the Inception-ResNet v2 model gave the highest accuracy among all. The model is fine tuned by freezing its layers and adding custom layers on top. The input image size for this model is a coloured image of 75x75 pixels. The structure of the model is shown in the image below:
 
